@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Jireh Suarez</title>
+
+  <style>
+    /* General Page Styling */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to bottom right, #1a2a33, #0d141a);
+      color: #ffffff;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background: linear-gradient(to right, #1e3c47, #213b3b);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: 0.3s ease;
+    }
+
+    .navbar ul li a:hover,
+    .navbar ul li a.active {
+      background-color: #1abc9c;
+      color: white;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+    }
+
+    .about-content {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #1abc9c;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #1abc9c;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-content">
+      <img src="jirehsuarez.jpg"alt="jirehsuarez"class="about-img">
+      <h1>About Me</h1>
+      <p>
+        Hello! I'm <strong>Jireh Suarez</strong> — a lifelong learner and aspiring web developer.
+        I enjoy designing and developing creative, user-friendly websites.
+        My passion for technology drives me to constantly improve and learn new things.
+      </p>
+      <p>
+        Outside of coding, I love photography, design, and exploring new ways to express creativity.
+        I believe that every project is a chance to grow and make something meaningful.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+

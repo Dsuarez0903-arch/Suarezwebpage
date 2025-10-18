@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Skills</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+   
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: #40e7b0;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ffaa;
+    }
+
+   
+    .skills-section {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .skills-section h2 {
+      font-size: 32px;
+      color: #00ffaa;
+      margin-bottom: 50px;
+      text-shadow: 0 0 10px #00ffaa;
+    }
+
+    .skills-container {
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.05);
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 170, 0.2);
+    }
+
+    .skill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+      color: #fff;
+    }
+
+    .skill-name {
+      width: 20%;
+      font-weight: bold;
+      color: #00ffaa;
+    }
+
+    .skill-bar {
+      width: 70%;
+      background: #223b4a;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 10px;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00ffaa, #00cc88);
+      width: 0;
+      transition: width 2s ease-in-out;
+    }
+
+    .skill-percent {
+      width: 10%;
+      text-align: right;
+      color: #00ffaa;
+      font-weight: bold;
+    }
+
+    body.loaded .skill-fill.html { width: 50%;}
+    body.loaded .skill-fill.css { width: 40%;}
+    body.loaded .skill-fill.js { width: 20%;}
+    body.loaded .skill-fill.bootstrap { width: 20%;}
+    body.loaded .skill-fill.photoshop { width: 40%;}
+
+    
+    footer {
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 60px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 14px;
+      color: #19ddac;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+    
+  <nav>
+    <h1>ME,MYSELF & I</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="skills-section">
+    <h2>Professional Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div class="skill-fill html"></div></div>
+        <div class="skill-percent">50%</div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar"><div class="skill-fill css"></div></div>
+        <div class="skill-percent">40%</div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar"><div class="skill-fill js"></div></div>
+        <div class="skill-percent">20%</div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Bootstrap</div>
+        <div class="skill-bar"><div class="skill-fill bootstrap"></div></div>
+        <div class="skill-percent">20%</div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Photoshop</div>
+        <div class="skill-bar"><div class="skill-fill photoshop"></div></div>
+        <div class="skill-percent">40%</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Jireh Suarez | All Rights Reserved
+  </footer>
+
+  <script>
+   
+    window.addEventListener("load", function() {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>
+
+
